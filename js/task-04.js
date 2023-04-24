@@ -5,11 +5,11 @@ let counterValue = 0;
   const decrementButton = document.querySelector('[data-action="decrement"]');
 
   incrementButton.addEventListener('click', () => {
-    counterValue++;
+    counterValue+=1;
     valueEl.textContent = counterValue;
   });
 
   decrementButton.addEventListener('click', () => {
-    counterValue--;
+    counterValue-=1;
     valueEl.textContent = counterValue;
   });
